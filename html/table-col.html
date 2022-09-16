@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 컬럼지정</title>
+</head>
+<body>
+    <h1>테이블 컬럼지정</h1>
+<p>
+    emmet 부모>자식
+    emmet 형제 + 바로뒤형제
+</p>
+<p>
+    caption>colgroup caption 부모 colgroup 자식
+    caption+colgroup caption 형 colgroup 동생
+</p>
+<!-- table>caption -->
+    <table border="1" width="80%">
+        <caption>테이블 제목칸</caption>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <tr>
+            <td>1</td>
+            <td>1-1</td>
+            <td>1-2</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2-1</td>
+            <td>2-2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3-1</td>
+            <td>3-2</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1" width="80%">
+        <!-- caption colgroup 형제 -->
+        <!-- caption+colgroup -->
+        <caption></caption>
+        <colgroup>
+            <!-- col 3개</colgroup> -->
+            <col>
+            <col>
+            <col>
+            <tr>
+                <th>제목</th>
+                <th>제목</th>
+                <th>제목</th>
+            </tr>
+            <tr>
+                <th>내용2/th>
+                <td>내용2</td>
+                <td>내용2</td>
+            </tr>
+            <tr>
+                <th>내용2/th>
+                <td>내용2</td>
+                <td>내용2</td>
+            </tr>
+        </colgroup>
+    </table>
+</body>
+</html>
