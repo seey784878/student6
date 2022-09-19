@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자연습</title>
+    <style>
+        #section1{background-color: #9dff00;}
+        #section2{background-color: #e5ff00;}
+        #section3{background-color: #230ee0ab;}
+        .box{color:#f00;}
+        section > p {color:#ff0;}
+        h1 + p{background-color: #ccc;}
+    
+        h1 ~ p {background-color: #352;}
+    </style>
+</head>
+<body>
+    <!--div#wrap
+    태그#아이디명  -->
+    <div id="wrap">
+        <header>헤더</header>
+        <div class="container">
+            <!-- section#section$*3 -->
+            <section id="section1">
+                <p></p>
+                <div class="box">
+                <p>형님</p>
+                <h1>섹션제목</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ipsum beatae temporibus sed autem, totam nostrum debitis tempora quod quas quis nisi molestias unde optio corporis ipsam alias dolorum esse!
+
+                </p>
+                <p>동생</p>
+            </section>
+            <section id="section2">
+      <!-- p+.box -->
+                <p></p>
+                <div class="box">
+                <h1>섹션제목</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ipsum beatae temporibus sed autem, totam nostrum debitis tempora quod quas quis nisi molestias unde optio corporis ipsam alias dolorum esse!
+
+                </p>
+                <p>동생</p>
+                </div>
+            </section>
+            <section id="section3">
+                <p></p>
+                <div class="box">
+                <h1>섹션제목</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ipsum beatae temporibus sed autem, totam nostrum debitis tempora quod quas quis nisi molestias unde optio corporis ipsam alias dolorum esse!
+
+                </p>
+                <p>동생</p>
+            </section>
+        </div>
+        <footer>푸터</footer>
+    <!-- //#wrap -->
+    </div>
+</body>
+</html>
