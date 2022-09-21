@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-attachement</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .wrap{}
+        section{
+            height: 500px;
+            padding:50px;
+            box-sizing: border-box;
+        }
+        .section1{
+            background-color: #1beb25;
+        }
+        .section2{
+            background-color: #f30dae;
+            background-image: url(images/bg.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            /* background-attachment: fixed; */
+            /* background-position: center 100%; */
+            background-position: center bottom;
+            background-attachment: scroll;
+            background-size: cover;
+        }
+        .section3{
+            background-color: #1a40eb;
+        }
+        section .title{
+            font-size:100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <!-- section.section$*3>p.title>{제목$} -->
+        <section class="section1">
+            <p class="title">제목1</p>
+        </section>
+        <section class="section2">
+            <p class="title">제목2</p>
+        </section>
+        <section class="section3">
+            <p class="title">제목3</p>
+        </section>
+    </div>
+</body>
+</html>
