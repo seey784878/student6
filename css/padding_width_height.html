@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0;}
+        .wrap{
+            width:1190px;
+            /* 블록레벨 가운데 정렬 */
+            /* 부모에게 너비 지정 */
+            /* margin:0 auto; */
+            /* 박스모델은 부모의 너비를 쓴다 */
+            /* 2값 상하 좌우 */
+            /* 0갑은 상하를 0값으로, 좌우는 auto : 부모너비에서-남은값은 좌우로 여백을 동등하게 줘라 */
+            margin:0 auto;
+        }
+        section {
+            /* 2값 상하는 50px 좌우는 100px */
+            /* padding:50px 100px; */
+            /* 1값 상후하좌 동일 */
+            padding:2rem;
+            border:10px dashed #000;
+            border-left:0;
+            border-right:0;
+            /* margin:2rem 0; */
+
+        } 
+        .section1{
+            background-color: hsl(51, 100%, 50%);
+        }
+        .section2{
+            background-color: hwb(239 0% 0%);
+        }
+        .section3{
+            background-color: hwb(323 0% 0%);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+    
+        <div class="slide">
+            슬라이드
+        </div>
+        <!-- section.section$*3>h1>{section$}^p>lorem>} -->
+        <section class="section1">
+            <h1>section1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sunt veniam voluptatum numquam nihil sapiente nulla fugiat fugit. Perspiciatis nemo illo accusantium nisi quis magni minus. Ea delectus excepturi sed?</p>
+        </section>
+        <section class="section2">
+            <h1>section2</h1>
+            <p>Culpa, iusto sint quis nulla eum sapiente obcaecati pariatur debitis ab iste error amet autem quidem nihil incidunt quae reiciendis nobis soluta magni sed deleniti! Voluptatem ad aspernatur amet dolores!</p>
+        </section>
+        <section class="section3">
+            <h1>section3</h1>
+            <p>Voluptates, animi. Repellendus ab voluptatum autem quod, earum laudantium explicabo iusto sit aliquam. Quasi officia voluptatibus fugiat consequuntur velit perferendis non nam odit dolores sequi. Harum ipsa quod inventore tempora.</p>
+        </section>
+        <div class="notice">
+            공지사항
+        </div>
+</div>
+</body>
+</html>
