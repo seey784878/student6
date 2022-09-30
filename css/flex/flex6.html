@@ -15,6 +15,41 @@
     .container {
       padding: 1rem;
       min-width: 960px;
+   
+    }
+
+    .parent .child{
+      background-color: #23e23d;
+    }
+
+    .parent{
+      display: flex;
+      flex-direction: column;
+      background-color: #4b0fd8;
+      align-items: center;
+      /* .util-top의 기준요소 */
+      position: relative;
+
+    }
+    .logo{
+      width: 150px;
+      height: 150px;
+      
+    }
+    .navigation{
+      width: 200px;
+      line-height: 80px;
+      /* text-align: center; */
+    }
+    .util-top{
+      position: absolute;
+      /* top:25px; */
+      bottom:10px;
+      right:0px;
+      height: 80px;
+      width: 80px;
+      
+
     }
 
    
